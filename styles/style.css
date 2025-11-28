@@ -56,16 +56,19 @@
     /*min-height: 30vh;*/
     /*align-items: center;*/
     color: var(--accent-color);
+    display: grid;
+    gap: 0px;
 }
 
 .main {
-    padding-block-start: 20px;
+    padding-block-start: 10px;
 }
 
 .header__theme-menu {
     display: flex;
     justify-content: flex-end;
-    padding-block-start: 65px;
+    align-items: center;
+    padding-block-start: 10px;
 }
 
 @media (width >= 768px) {
@@ -78,7 +81,7 @@
     }
 
     .header__theme-menu {
-        padding-block-start: 170px;
+        padding-block-start: 192px;
     }
 }
 
@@ -144,7 +147,8 @@
     padding: 0 13px;
     cursor: pointer;
     font-size: 18px;
-    line-height: 1.445;
+    line-height: 1.17;
+    padding-bottom: 5px;
 }
 
 .header__theme-menu-button:focus {
@@ -168,7 +172,7 @@
 .header h1 {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     color: #db00ff;
-    line-height: 0.825;
+    line-height: 0.83;
 }
 
 .header h1 {
@@ -181,8 +185,8 @@
 
 .header__title {
     display: grid;
-
-    padding-block-start: 65px;
+    gap: 0px;
+    /*padding-block-start: 5px;*/
     grid-template-columns: 1fr 1fr;
 }
 
@@ -195,7 +199,9 @@
     grid-row: 2;
     grid-column: 1 / 3;
     word-wrap: break-word;
-    margin-block-start: 55px;
+    align-self: start;
+    line-height: 23.4px;
+    margin-block-start: -10px;
     /*margin-block-end: 10px;*/
 }
 
@@ -204,8 +210,11 @@
     color: var(--bg-color);
     font-weight: bold;
     font-size: 18px;
-    line-height: 23.4px;
     word-wrap: break-word;
+}
+
+.item__title {
+    line-height: 23px;
 }
 
 @media (width >= 768px) {
@@ -220,6 +229,7 @@
     .header__title-name {
         grid-row: 1;
         grid-column: 1 / 3;
+        transform: translateX(-20px);
     }
 
     .header__title-description {
@@ -253,6 +263,7 @@
 }
 
 .item__description {
+    line-height: 23.4px;
     margin-block-start: 10px;
     margin-block-end: 20px;
     color: var(--text-color);
@@ -322,8 +333,9 @@
 
 .gallery-container {
     display: grid;
-    gap: 5px;
+    gap: 10px;
     grid-template-columns: 1fr;
+    padding-block-start: 10px;
 }
 
 .gallery-container img {
@@ -373,7 +385,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-block-start: 50px;
+    margin-block-start: 40px;
     /*padding-block-start: 10px;*/
 }
 
