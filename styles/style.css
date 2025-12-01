@@ -121,7 +121,7 @@
 
 .header__title {
     display: grid;
-    gap: 0px;
+    gap: 64px;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -147,6 +147,7 @@
 }
 
 .header h1 {
+    padding-block-start: 65px;
     text-shadow: 4px 4px 0 var(--accent-color);
 }
 
@@ -244,7 +245,7 @@
 /* ================== Медиа-запросы ================== */
 
 /* Tablet (768px и выше) */
-@media (width >= 768px) {
+@media (width >=768px) {
     .page {
         padding: 0 20px;
     }
@@ -339,7 +340,7 @@
 }
 
 /* Desktop (1024px и выше) */
-@media (width >= 1024px) {
+@media (width >=1024px) {
     .header__theme-menu {
         justify-content: center;
         align-items: top;
