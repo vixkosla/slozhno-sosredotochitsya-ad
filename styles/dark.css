@@ -32,19 +32,14 @@
     color: var(--accent-color);
 }
 
-.theme-dark .header__rec::before {
-    content: "REC";
-}
-
-.theme-dark .header__rec::after {
-    content: "";
-    display: inline-block;
-}
-
 .theme-dark .decorated-zone::after {
     border-color: var(--accent-color);
 }
 
 .theme-dark .decorated-zone::before {
     border-color: var(--accent-color);
+}
+
+.theme-dark .header__rec {
+    display: inline-block;
 }

@@ -32,18 +32,14 @@
     color: var(--text-color);
 }
 
-.theme-light .header__rec::before {
-    content: "";
-}
-
-.theme-light .header__rec::after {
-    display: none;
-}
-
 .theme-light .decorated-zone::after {
     border-color: var(--text-color);
 }
 
 .theme-light .decorated-zone::before {
     border-color: var(--text-color);
+}
+
+.theme-light .header__rec {
+    display: none;
 }
