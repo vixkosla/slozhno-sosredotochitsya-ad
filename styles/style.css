@@ -28,6 +28,7 @@
     border-style: solid;
     border-color: var(--accent-color);
     border-width: 0 0 1px 1px;
+    /*box-sizing: content-box;*/
 }
 
 .decorated-zone::after {
@@ -37,6 +38,9 @@
     right: 0;
     width: 25px;
     height: 25px;
+    /*box-shadow:
+        0 -1px 0 0 var(--accent-color),
+        1px 0 0 0 var(--accent-color);*/
     border-style: solid;
     border-color: var(--accent-color);
     border-width: 1px 1px 0 0;
@@ -47,32 +51,36 @@
     color: var(--accent-color);
     display: grid;
     grid-template-rows: auto 1fr 1fr;
-    gap: 0px;
+    gap: 65px;
 }
 
 .header__rec {
     position: absolute;
-    font-size: 18px;
     top: 10px;
     right: 0px;
+    font-size: 18px;
+    margin-inline-end: 9px;
 }
 
 .header__rec::before {
     content: "REC";
     line-height: 25px;
+    font-size: 18px;
 }
 
 .header__rec::after {
     content: "";
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    vertical-align: middle;
+    line-height: 25px;
+
+    width: 9px;
+    height: 9px;
     background: var(--accent-color);
     /* border: none; */
     border-radius: 50%;
-    margin-inline-start: 9px;
-    margin-inline-end: 9px;
-    box-shadow: 0px 0px 4px 3px var(--accent-color);
+    margin-inline-start: 10px;
+    box-shadow: 0px 0px 4px 2px var(--accent-color);
 }
 
 .header__theme-menu {
@@ -144,7 +152,7 @@
 }
 
 .header h1 {
-    padding-block-start: 65px;
+    /*padding-block-start: 65px;*/
     text-shadow: 4px 4px 0 var(--accent-color);
 }
 
@@ -154,7 +162,7 @@
 
 /* Main content */
 .main {
-    padding-block-start: 10px;
+    padding-block-start: 9px;
 }
 
 .main__section {
@@ -162,13 +170,19 @@
     margin-block-start: 30px;
 }
 
+.main__section.main__section-third {
+    margin-block-start: 29px;
+}
+
 .main__section-gallery {
     margin-block-start: 30px;
+    margin-block-end: 40px;
 }
 
 .section__title {
     color: var(--accent-color);
-    margin-block-end: 20px;
+    margin-block-end: 21px;
+    line-height: 23.4px;
 }
 
 .section__container-third h4 {
@@ -189,6 +203,10 @@
 
 .item__title {
     line-height: 23px;
+}
+
+.section__container-third .item__title {
+    line-height: 23.4px;
 }
 
 .item__description {
@@ -236,7 +254,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-block-start: 40px;
 }
 
 /* ================== Медиа-запросы ================== */
@@ -287,7 +304,6 @@
 
     .main__section.main__section-first {
         margin-block-start: 50px;
-
     }
 
     .main__section.main__section-second {
@@ -298,8 +314,6 @@
     .main__section.main__section-third {
         margin-block-start: 60px;
     }
-
-
 
     .section__title {
         grid-column: 1 / 2;
@@ -312,7 +326,6 @@
     .section__container {
         grid-column: 2 / 4;
     }
-
 
     .section__container.section__container-second {
         grid-column: 1 / 4;
