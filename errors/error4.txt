@@ -1,0 +1,40 @@
+ /usr/bin/docker compose -f docker-compose.yml up --abort-on-container-exit --no-log-prefix
+  time="2025-12-02T18:08:46Z" level=warning msg="/var/tmp/source/docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+  time="2025-12-02T18:08:46Z" level=warning msg="Found orphan containers ([source-app-run-9145b7218c2f]) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up."
+   Container source-app-1  Creating
+   Container source-app-1  Created
+  Attaching to app-1
+  npm install -g wait-port http-server
+  
+  added 58 packages in 2s
+  
+  15 packages are looking for funding
+    run `npm fund` for details
+  npm notice
+  npm notice New major version of npm available! 10.8.2 -> 11.6.4
+  npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.6.4
+  npm notice To update run: npm install -g npm@11.6.4
+  npm notice
+  http-server ./code -p 3000 > /dev/null 2>&1 & wait-port -t 30000 localhost:3000
+  Waiting for localhost:3000...
+  Connected!
+  node tests/src/index.js ./code
+  sh ./scripts/result.sh
+  -e Исправьте ошибки:
+  -e 1. Тёмная цветовая схема не соответствует макету.
+  
+  -e 2. Сбросьте браузерные отступы у элементов: body.
+  
+  -e 3. Визуальное отличие макета от эталона, с шириной экрана - 1024px. Изображение можно скачать в артефактах. Первое изображение - эталон, второе - ваша вёрстка, третье - отличие.
+  
+  -e 4. Визуальное отличие макета от эталона, с шириной экрана - 768px. Изображение можно скачать в артефактах. Первое изображение - эталон, второе - ваша вёрстка, третье - отличие.
+  
+  -e 5. Визуальное отличие макета от эталона, с шириной экрана - 375px. Изображение можно скачать в артефактах. Первое изображение - эталон, второе - ваша вёрстка, третье - отличие.
+  make: *** [Makefile:34: test] Error 1
+  
+  app-1 exited with code 2
+  Aborting on container exit...
+   Container source-app-1  Stopping
+   Container source-app-1  Stopped
+  
+Тесты завершились с ошибкой. Откройте выше вкладку Tests и исправьте ошибки.

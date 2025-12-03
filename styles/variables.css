@@ -1,10 +1,12 @@
 :root {
-  --accent-color: #ff0070;
-  --bg-color: #000028;
-  --text-color: #f1b2ce;
+    --accent-color: #ff0070;
+    --bg-color: #000028;
+    --text-color: #f1b2ce;
 
-  --bg-url: url("../images/cover-image-dark.png");
+    --title-color: #db00ff;
 
-  --hover-outline-color: rgba(255, 0, 112, 0.4);
-  --default-outline-color: var(--accent-color);
+    --bg-url: url("../images/cover-image-dark.png");
+
+    --hover-outline-color: rgba(255, 0, 112, 0.4);
+    --default-outline-color: var(--accent-color);
 }

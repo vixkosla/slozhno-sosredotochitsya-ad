@@ -43,3 +43,35 @@
 .theme-light .header__rec {
     display: none;
 }
+
+@media (prefers-color-scheme: light) {
+    :root {
+        /* Дублируем переменные светлой темы */
+        --accent-color: #ff8dcb;
+        --bg-color: #fff1f7;
+        --text-color: #353430;
+        --bg-url: url("../images/cover-image-light.png");
+        --hover-outline-color: rgba(50, 49, 45, 0.4);
+        --default-outline-color: var(--text-color);
+    }
+
+    .theme-light .title-decor {
+        color: var(--text-color);
+    }
+
+    .theme-light .section__title {
+        color: var(--text-color);
+    }
+
+    .theme-light .decorated-zone::after {
+        border-color: var(--text-color);
+    }
+
+    .theme-light .decorated-zone::before {
+        border-color: var(--text-color);
+    }
+
+    .page:not(.theme-dark) .header__rec {
+        display: none;
+    }
+}
