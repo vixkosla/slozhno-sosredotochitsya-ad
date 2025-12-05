@@ -9,4 +9,9 @@
 
     --hover-outline-color: rgba(255, 0, 112, 0.4);
     --default-outline-color: var(--accent-color);
+
+    /* Слой 2: Семантическое назначение для тёмной темы */
+    --decorated-title-text-color: var(--bg-color);
+    --section-title-color: var(--accent-color);
+    --rec-display: block;
 }

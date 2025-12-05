@@ -10,7 +10,6 @@
     background-attachment: fixed;
     background-color: var(--bg-color);
     padding: 0 10px;
-    margin: 0 auto;
 }
 
 .decorated-zone {
@@ -27,7 +26,7 @@
     width: 25px;
     height: 25px;
     border-style: solid;
-    border-color: var(--accent-color);
+    border-color: var(--section-title-color);
     border-width: 0 0 1px 1px;
     /*box-sizing: content-box;*/
 }
@@ -43,7 +42,7 @@
         0 -1px 0 0 var(--accent-color),
         1px 0 0 0 var(--accent-color);*/
     border-style: solid;
-    border-color: var(--accent-color);
+    border-color: var(--section-title-color);
     border-width: 1px 1px 0 0;
 }
 
@@ -61,6 +60,7 @@
     right: 0px;
     font-size: 18px;
     margin-inline-end: 9px;
+    display: var(--rec-display);
 }
 
 .header__rec::before {
@@ -181,7 +181,7 @@
 }
 
 .section__title {
-    color: var(--accent-color);
+    color: var(--section-title-color);
     line-height: 23.4px;
     margin-block-end: 21px;
 }
@@ -196,7 +196,7 @@
 
 .title-decor {
     background-color: var(--accent-color);
-    color: var(--bg-color);
+    color: var(--decorated-title-text-color);
     font-weight: bold;
     font-size: 18px;
     word-wrap: break-word;
@@ -407,6 +407,11 @@
         gap: 20px;
     }
 
+    .main__section.main__section-third {
+        margin-block-start: 60px;
+        gap: 20px;
+    }
+
     .section__title.section__title-second {
         /*margin-block-end: 20px;*/
         max-width: 100%;
@@ -424,5 +429,9 @@
 
     .section__container-item {
         grid-row: 1;
+    }
+
+    .footer h2 {
+        font-size: 157px;
     }
 }
