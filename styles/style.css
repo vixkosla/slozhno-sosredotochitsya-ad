@@ -384,7 +384,7 @@
 }
 
 /* Desktop (1024px и выше) */
-@media (width >=1024px) {
+@media (width >= 1024px) {
     .header__theme-menu {
         justify-content: center;
         align-items: top;
@@ -404,8 +404,17 @@
     }
 
     .main__section.main__section-first {
-        gap: 35px;
+        gap: 20px;
     }
+
+    .section__title.section__title-second {
+        /*margin-block-end: 20px;*/
+        max-width: 100%;
+    }
+
+    /*.main__section.main__section-second {
+        margin-block-start: 61px;
+    }*/
 
     .section__container-second {
         display: grid;

@@ -52,6 +52,9 @@
         --accent-color: #ff8dcb;
         --bg-color: #fff1f7;
         --text-color: #353430;
+
+        --title-color: #ffc2e6;
+
         --bg-url: url("../images/cover-image-light.png");
         --hover-outline-color: rgba(50, 49, 45, 0.4);
         --default-outline-color: var(--text-color);
