@@ -14,7 +14,6 @@ body {
     min-inline-size: 375px;
     max-inline-size: 1440px;
     font-family: "IBM Plex Mono", monospace;
-    margin: 0 auto;
 }
 
 h1,
