@@ -9,6 +9,10 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: var(--bg-color);
+}
+
+.wrapper {
+    margin: 0 auto;
     padding: 0 10px;
 }
 
@@ -261,7 +265,7 @@
 
 /* Tablet (768px и выше) */
 @media (width >=768px) {
-    .page {
+    .wrapper {
         padding: 0 20px;
     }
 
